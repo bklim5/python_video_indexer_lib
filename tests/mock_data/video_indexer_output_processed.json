@@ -1,0 +1,1179 @@
+{
+	"accountId": "6d171d2f-6d58-4614-ace8-c36eec874873",
+	"id": "765ae329c7",
+	"partition": null,
+	"name": "temp.mp4",
+	"description": null,
+	"userName": "dummy first name dummy last name",
+	"created": "2018-10-05T14:56:34.7268773+00:00",
+	"privacyMode": "Private",
+	"state": "Processed",
+	"isOwned": true,
+	"isEditable": true,
+	"isBase": true,
+	"durationInSeconds": 28,
+	"summarizedInsights": {
+		"name": "temp.mp4",
+		"id": "765ae329c7",
+		"privacyMode": "Private",
+		"duration": {
+			"time": "0:00:28.438",
+			"seconds": 28.4
+		},
+		"thumbnailVideoId": "765ae329c7",
+		"thumbnailId": "cabb0689-fdf5-489c-86b3-f8ddf4a9f945",
+		"faces": [
+			{
+				"id": 1000,
+				"videoId": "765ae329c7",
+				"referenceId": null,
+				"referenceType": "Bing",
+				"knownPersonId": "00000000-0000-0000-0000-000000000000",
+				"confidence": 0,
+				"name": "Unknown #1",
+				"description": null,
+				"title": null,
+				"thumbnailId": "1c45f69d-f9aa-4e5e-a3b3-b213f32570e2",
+				"appearances": [
+					{
+						"startTime": "0:00:00",
+						"endTime": "0:00:28.366",
+						"startSeconds": 0,
+						"endSeconds": 28.4
+					}
+				],
+				"seenDuration": 28.4,
+				"seenDurationRatio": 0.9987
+			}
+		],
+		"keywords": [
+			{
+				"id": 0,
+				"name": "time",
+				"appearances": [
+					{
+						"startTime": "0:00:15.57",
+						"endTime": "0:00:22.8",
+						"startSeconds": 15.6,
+						"endSeconds": 22.8
+					}
+				],
+				"isTranscript": true
+			},
+			{
+				"id": 1,
+				"name": "spend",
+				"appearances": [
+					{
+						"startTime": "0:00:01.18",
+						"endTime": "0:00:09.64",
+						"startSeconds": 1.2,
+						"endSeconds": 9.6
+					},
+					{
+						"startTime": "0:00:15.57",
+						"endTime": "0:00:22.8",
+						"startSeconds": 15.6,
+						"endSeconds": 22.8
+					}
+				],
+				"isTranscript": true
+			}
+		],
+		"sentiments": [
+			{
+				"sentimentKey": "Negative",
+				"appearances": [
+					{
+						"startTime": "0:00:17.64",
+						"endTime": "0:00:20.71",
+						"startSeconds": 17.6,
+						"endSeconds": 20.7
+					},
+					{
+						"startTime": "0:00:20.77",
+						"endTime": "0:00:24.2",
+						"startSeconds": 20.8,
+						"endSeconds": 24.2
+					}
+				],
+				"seenDurationRatio": 0.2286
+			},
+			{
+				"sentimentKey": "Neutral",
+				"appearances": [
+					{
+						"startTime": "0:00:00",
+						"endTime": "0:00:04.13",
+						"startSeconds": 0,
+						"endSeconds": 4.1
+					},
+					{
+						"startTime": "0:00:04.18",
+						"endTime": "0:00:06.45",
+						"startSeconds": 4.2,
+						"endSeconds": 6.4
+					},
+					{
+						"startTime": "0:00:09.65",
+						"endTime": "0:00:10.74",
+						"startSeconds": 9.6,
+						"endSeconds": 10.7
+					},
+					{
+						"startTime": "0:00:17.206",
+						"endTime": "0:00:17.63",
+						"startSeconds": 17.2,
+						"endSeconds": 17.6
+					}
+				],
+				"seenDurationRatio": 0.2783
+			},
+			{
+				"sentimentKey": "Positive",
+				"appearances": [
+					{
+						"startTime": "0:00:06.45",
+						"endTime": "0:00:07.19",
+						"startSeconds": 6.4,
+						"endSeconds": 7.2
+					},
+					{
+						"startTime": "0:00:07.24",
+						"endTime": "0:00:09.65",
+						"startSeconds": 7.2,
+						"endSeconds": 9.6
+					},
+					{
+						"startTime": "0:00:10.8",
+						"endTime": "0:00:14.12",
+						"startSeconds": 10.8,
+						"endSeconds": 14.1
+					},
+					{
+						"startTime": "0:00:14.18",
+						"endTime": "0:00:17.146",
+						"startSeconds": 14.2,
+						"endSeconds": 17.1
+					},
+					{
+						"startTime": "0:00:24.26",
+						"endTime": "0:00:28.29",
+						"startSeconds": 24.3,
+						"endSeconds": 28.3
+					}
+				],
+				"seenDurationRatio": 0.4735
+			}
+		],
+		"emotions": [],
+		"audioEffects": [],
+		"labels": [
+			{
+				"id": 0,
+				"name": "wall",
+				"appearances": [
+					{
+						"startTime": "0:00:00",
+						"endTime": "0:00:28.366",
+						"startSeconds": 0,
+						"endSeconds": 28.4
+					}
+				]
+			},
+			{
+				"id": 1,
+				"name": "person",
+				"appearances": [
+					{
+						"startTime": "0:00:00",
+						"endTime": "0:00:28.366",
+						"startSeconds": 0,
+						"endSeconds": 28.4
+					}
+				]
+			},
+			{
+				"id": 2,
+				"name": "indoor",
+				"appearances": [
+					{
+						"startTime": "0:00:00",
+						"endTime": "0:00:28.366",
+						"startSeconds": 0,
+						"endSeconds": 28.4
+					}
+				]
+			},
+			{
+				"id": 3,
+				"name": "smiling",
+				"appearances": [
+					{
+						"startTime": "0:00:08.533",
+						"endTime": "0:00:09.6",
+						"startSeconds": 8.5,
+						"endSeconds": 9.6
+					},
+					{
+						"startTime": "0:00:12.8",
+						"endTime": "0:00:13.867",
+						"startSeconds": 12.8,
+						"endSeconds": 13.9
+					}
+				]
+			},
+			{
+				"id": 4,
+				"name": "woman",
+				"appearances": [
+					{
+						"startTime": "0:00:27.733",
+						"endTime": "0:00:28.366",
+						"startSeconds": 27.7,
+						"endSeconds": 28.4
+					}
+				]
+			}
+		],
+		"brands": [],
+		"statistics": {
+			"correspondenceCount": 4,
+			"speakerTalkToListenRatio": {
+				"1": 0.324,
+				"3": 0.032,
+				"4": 0.182,
+				"5": 0.425,
+				"7": 0.035
+			},
+			"speakerLongestMonolog": {
+				"1": 8,
+				"3": 0,
+				"4": 4,
+				"5": 11,
+				"7": 0
+			},
+			"speakerNumberOfFragments": {
+				"1": 1,
+				"3": 1,
+				"4": 1,
+				"5": 2,
+				"7": 1
+			},
+			"speakerWordCount": {
+				"1": 29,
+				"3": 2,
+				"4": 19,
+				"5": 34,
+				"7": 2
+			}
+		}
+	},
+	"videos": [
+		{
+			"accountId": "6d171d2f-6d58-4614-ace8-c36eec874873",
+			"id": "765ae329c7",
+			"state": "Processed",
+			"moderationState": "OK",
+			"reviewState": "None",
+			"privacyMode": "Private",
+			"processingProgress": "100%",
+			"failureCode": "General",
+			"failureMessage": "",
+			"externalId": null,
+			"externalUrl": null,
+			"metadata": null,
+			"insights": {
+				"version": "1.0.0.0",
+				"duration": "0:00:28.438",
+				"sourceLanguage": "en-US",
+				"language": "en-US",
+				"transcript": [
+					{
+						"id": 0,
+						"text": "Government spending increasing pressure on banks and other financial institutions as well as other regulated entities like law firms to know their customers or effectively know who they were.",
+						"confidence": 0.824,
+						"speakerId": 1,
+						"language": "en-US",
+						"instances": [
+							{
+								"adjustedStart": "0:00:01.18",
+								"adjustedEnd": "0:00:09.64",
+								"start": "0:00:01.18",
+								"end": "0:00:09.64"
+							}
+						]
+					},
+					{
+						"id": 1,
+						"text": "Play list.",
+						"confidence": 0.4308,
+						"speakerId": 3,
+						"language": "en-US",
+						"instances": [
+							{
+								"adjustedStart": "0:00:09.65",
+								"adjustedEnd": "0:00:10.49",
+								"start": "0:00:09.65",
+								"end": "0:00:10.49"
+							}
+						]
+					},
+					{
+						"id": 2,
+						"text": "I'm a lot these companies are doing is poorly as possibly billions, of dollars in fines if we get.",
+						"confidence": 0.7806,
+						"speakerId": 4,
+						"language": "en-US",
+						"instances": [
+							{
+								"adjustedStart": "0:00:10.8",
+								"adjustedEnd": "0:00:15.56",
+								"start": "0:00:10.8",
+								"end": "0:00:15.56"
+							}
+						]
+					},
+					{
+						"id": 3,
+						"text": "Now is the right time to disrupt this market. I 75% of these organisations feel that they need to spend more time controlling costs around.",
+						"confidence": 0.8249,
+						"speakerId": 5,
+						"language": "en-US",
+						"instances": [
+							{
+								"adjustedStart": "0:00:15.57",
+								"adjustedEnd": "0:00:22.8",
+								"start": "0:00:15.57",
+								"end": "0:00:22.8"
+							}
+						]
+					},
+					{
+						"id": 4,
+						"text": "In this moment, we are uniquely positioned to you.",
+						"confidence": 0.7572,
+						"speakerId": 5,
+						"language": "en-US",
+						"instances": [
+							{
+								"adjustedStart": "0:00:22.81",
+								"adjustedEnd": "0:00:26.68",
+								"start": "0:00:22.81",
+								"end": "0:00:26.68"
+							}
+						]
+					},
+					{
+						"id": 5,
+						"text": "Helping Dennis.",
+						"confidence": 0.5722,
+						"speakerId": 7,
+						"language": "en-US",
+						"instances": [
+							{
+								"adjustedStart": "0:00:27.02",
+								"adjustedEnd": "0:00:27.95",
+								"start": "0:00:27.02",
+								"end": "0:00:27.95"
+							}
+						]
+					}
+				],
+				"keywords": [
+					{
+						"id": 0,
+						"text": "time",
+						"confidence": 0.6211,
+						"language": "en-US",
+						"instances": [
+							{
+								"adjustedStart": "0:00:14.18",
+								"adjustedEnd": "0:00:17.63",
+								"start": "0:00:14.18",
+								"end": "0:00:17.63"
+							},
+							{
+								"adjustedStart": "0:00:20.77",
+								"adjustedEnd": "0:00:24.2",
+								"start": "0:00:20.77",
+								"end": "0:00:24.2"
+							}
+						]
+					},
+					{
+						"id": 1,
+						"text": "spend",
+						"confidence": 0.6211,
+						"language": "en-US",
+						"instances": [
+							{
+								"adjustedStart": "0:00:00",
+								"adjustedEnd": "0:00:04.13",
+								"start": "0:00:00",
+								"end": "0:00:04.13"
+							},
+							{
+								"adjustedStart": "0:00:17.64",
+								"adjustedEnd": "0:00:20.71",
+								"start": "0:00:17.64",
+								"end": "0:00:20.71"
+							}
+						]
+					}
+				],
+				"topics": [
+					{
+						"id": 0,
+						"name": "INVESTMENT BANKING",
+						"referenceId": "FINANCE/INVESTMENT BANKING",
+						"referenceType": "VideoIndexer",
+						"confidence": 0.6769,
+						"language": "en-US",
+						"instances": [
+							{
+								"adjustedStart": "0:00:00",
+								"adjustedEnd": "0:00:28.367",
+								"start": "0:00:00",
+								"end": "0:00:28.367"
+							}
+						]
+					},
+					{
+						"id": 1,
+						"name": "RULES AND REGULATIONS",
+						"referenceId": "RULES AND REGULATIONS",
+						"referenceType": "VideoIndexer",
+						"confidence": 0.6623,
+						"language": "en-US",
+						"instances": [
+							{
+								"adjustedStart": "0:00:00",
+								"adjustedEnd": "0:00:28.367",
+								"start": "0:00:00",
+								"end": "0:00:28.367"
+							}
+						]
+					},
+					{
+						"id": 2,
+						"name": "CORPORATIONS",
+						"referenceId": "BUSINESS/CORPORATIONS",
+						"referenceType": "VideoIndexer",
+						"confidence": 0.6613,
+						"language": "en-US",
+						"instances": [
+							{
+								"adjustedStart": "0:00:00",
+								"adjustedEnd": "0:00:28.367",
+								"start": "0:00:00",
+								"end": "0:00:28.367"
+							}
+						]
+					},
+					{
+						"id": 3,
+						"name": "CORPORATE FINANCE",
+						"referenceId": "CORPORATE FINANCE",
+						"referenceType": "VideoIndexer",
+						"confidence": 0.661,
+						"language": "en-US",
+						"instances": [
+							{
+								"adjustedStart": "0:00:00",
+								"adjustedEnd": "0:00:28.367",
+								"start": "0:00:00",
+								"end": "0:00:28.367"
+							}
+						]
+					},
+					{
+						"id": 4,
+						"name": "BANKING",
+						"referenceId": "FINANCE/FINANCIAL INSTITUTIONS/BANKING",
+						"referenceType": "VideoIndexer",
+						"confidence": 0.6594,
+						"language": "en-US",
+						"instances": [
+							{
+								"adjustedStart": "0:00:00",
+								"adjustedEnd": "0:00:28.367",
+								"start": "0:00:00",
+								"end": "0:00:28.367"
+							}
+						]
+					},
+					{
+						"id": 5,
+						"name": "FINANCE",
+						"referenceId": "FINANCE",
+						"referenceType": "VideoIndexer",
+						"confidence": 0.6308,
+						"language": "en-US",
+						"instances": [
+							{
+								"adjustedStart": "0:00:00",
+								"adjustedEnd": "0:00:28.367",
+								"start": "0:00:00",
+								"end": "0:00:28.367"
+							}
+						]
+					},
+					{
+						"id": 6,
+						"name": "THE US GOVERNMENT",
+						"referenceId": "THE US GOVERNMENT",
+						"referenceType": "VideoIndexer",
+						"confidence": 0.6255,
+						"language": "en-US",
+						"instances": [
+							{
+								"adjustedStart": "0:00:00",
+								"adjustedEnd": "0:00:28.367",
+								"start": "0:00:00",
+								"end": "0:00:28.367"
+							}
+						]
+					},
+					{
+						"id": 7,
+						"name": "GOVERNMENT REGULATIONS",
+						"referenceId": "POLITICS AND GOVERNMENT/GOVERNMENT/GOVERNMENT REGULATIONS",
+						"referenceType": "VideoIndexer",
+						"confidence": 0.5297,
+						"language": "en-US",
+						"instances": [
+							{
+								"adjustedStart": "0:00:00",
+								"adjustedEnd": "0:00:28.367",
+								"start": "0:00:00",
+								"end": "0:00:28.367"
+							}
+						]
+					},
+					{
+						"id": 8,
+						"name": "GOVERNMENT",
+						"referenceId": "POLITICS AND GOVERNMENT/GOVERNMENT",
+						"referenceType": "VideoIndexer",
+						"confidence": 0.5086,
+						"language": "en-US",
+						"instances": [
+							{
+								"adjustedStart": "0:00:00",
+								"adjustedEnd": "0:00:28.367",
+								"start": "0:00:00",
+								"end": "0:00:28.367"
+							}
+						]
+					},
+					{
+						"id": 9,
+						"name": "BANKS",
+						"referenceId": "FINANCE/FINANCIAL INSTITUTIONS/BANKS",
+						"referenceType": "VideoIndexer",
+						"confidence": 0.4835,
+						"language": "en-US",
+						"instances": [
+							{
+								"adjustedStart": "0:00:00",
+								"adjustedEnd": "0:00:28.367",
+								"start": "0:00:00",
+								"end": "0:00:28.367"
+							}
+						]
+					},
+					{
+						"id": 10,
+						"name": "Finance",
+						"referenceId": "FINANCE",
+						"referenceType": "VideoIndexer",
+						"iptcName": "Economy, Business and Finance",
+						"confidence": 0.6173,
+						"language": "en-US",
+						"instances": [
+							{
+								"adjustedStart": "0:00:00",
+								"adjustedEnd": "0:00:28.367",
+								"start": "0:00:00",
+								"end": "0:00:28.367"
+							}
+						]
+					}
+				],
+				"faces": [
+					{
+						"id": 1000,
+						"name": "Unknown #1",
+						"confidence": 0,
+						"description": null,
+						"thumbnailId": "1c45f69d-f9aa-4e5e-a3b3-b213f32570e2",
+						"referenceId": null,
+						"title": null,
+						"imageUrl": null,
+						"thumbnails": [
+							{
+								"id": "a31dfa06-046f-4505-bc9b-bc4f5a83a627",
+								"fileName": "FaceThumbnail_a31dfa06-046f-4505-bc9b-bc4f5a83a627.jpg",
+								"instances": [
+									{
+										"adjustedStart": "0:00:00",
+										"adjustedEnd": "0:00:00.033",
+										"start": "0:00:00",
+										"end": "0:00:00.033"
+									}
+								]
+							},
+							{
+								"id": "26a443eb-d400-4582-a64d-201291276575",
+								"fileName": "FaceThumbnail_26a443eb-d400-4582-a64d-201291276575.jpg",
+								"instances": [
+									{
+										"adjustedStart": "0:00:05",
+										"adjustedEnd": "0:00:05.033",
+										"start": "0:00:05",
+										"end": "0:00:05.033"
+									}
+								]
+							},
+							{
+								"id": "92a02b5b-8646-4300-b84f-9fef1df2b68a",
+								"fileName": "FaceThumbnail_92a02b5b-8646-4300-b84f-9fef1df2b68a.jpg",
+								"instances": [
+									{
+										"adjustedStart": "0:00:10",
+										"adjustedEnd": "0:00:10.033",
+										"start": "0:00:10",
+										"end": "0:00:10.033"
+									}
+								]
+							},
+							{
+								"id": "1c45f69d-f9aa-4e5e-a3b3-b213f32570e2",
+								"fileName": "FaceThumbnail_1c45f69d-f9aa-4e5e-a3b3-b213f32570e2.jpg",
+								"instances": [
+									{
+										"adjustedStart": "0:00:15",
+										"adjustedEnd": "0:00:15.033",
+										"start": "0:00:15",
+										"end": "0:00:15.033"
+									}
+								]
+							},
+							{
+								"id": "05392210-74c8-47a7-9497-3fa1a151c98e",
+								"fileName": "FaceThumbnail_05392210-74c8-47a7-9497-3fa1a151c98e.jpg",
+								"instances": [
+									{
+										"adjustedStart": "0:00:20",
+										"adjustedEnd": "0:00:20.033",
+										"start": "0:00:20",
+										"end": "0:00:20.033"
+									}
+								]
+							},
+							{
+								"id": "45bd4a5a-d815-431c-baf3-3dd1295bd0b1",
+								"fileName": "FaceThumbnail_45bd4a5a-d815-431c-baf3-3dd1295bd0b1.jpg",
+								"instances": [
+									{
+										"adjustedStart": "0:00:22.267",
+										"adjustedEnd": "0:00:22.3",
+										"start": "0:00:22.267",
+										"end": "0:00:22.3"
+									}
+								]
+							},
+							{
+								"id": "f7a2902d-782c-4309-801c-4f50bb314ed7",
+								"fileName": "FaceThumbnail_f7a2902d-782c-4309-801c-4f50bb314ed7.jpg",
+								"instances": [
+									{
+										"adjustedStart": "0:00:25",
+										"adjustedEnd": "0:00:25.033",
+										"start": "0:00:25",
+										"end": "0:00:25.033"
+									}
+								]
+							}
+						],
+						"instances": [
+							{
+								"thumbnailsIds": [
+									"a31dfa06-046f-4505-bc9b-bc4f5a83a627",
+									"26a443eb-d400-4582-a64d-201291276575",
+									"92a02b5b-8646-4300-b84f-9fef1df2b68a",
+									"1c45f69d-f9aa-4e5e-a3b3-b213f32570e2",
+									"05392210-74c8-47a7-9497-3fa1a151c98e",
+									"45bd4a5a-d815-431c-baf3-3dd1295bd0b1",
+									"f7a2902d-782c-4309-801c-4f50bb314ed7"
+								],
+								"adjustedStart": "0:00:00",
+								"adjustedEnd": "0:00:28.366",
+								"start": "0:00:00",
+								"end": "0:00:28.366"
+							}
+						]
+					}
+				],
+				"labels": [
+					{
+						"id": 0,
+						"name": "wall",
+						"language": "en-US",
+						"instances": [
+							{
+								"confidence": 0.9968,
+								"adjustedStart": "0:00:00",
+								"adjustedEnd": "0:00:16",
+								"start": "0:00:00",
+								"end": "0:00:16"
+							},
+							{
+								"confidence": 0.9984,
+								"adjustedStart": "0:00:17.067",
+								"adjustedEnd": "0:00:28.366",
+								"start": "0:00:17.067",
+								"end": "0:00:28.366"
+							}
+						]
+					},
+					{
+						"id": 1,
+						"name": "person",
+						"language": "en-US",
+						"instances": [
+							{
+								"confidence": 0.9921,
+								"adjustedStart": "0:00:00",
+								"adjustedEnd": "0:00:28.366",
+								"start": "0:00:00",
+								"end": "0:00:28.366"
+							}
+						]
+					},
+					{
+						"id": 2,
+						"name": "indoor",
+						"language": "en-US",
+						"instances": [
+							{
+								"confidence": 0.9718,
+								"adjustedStart": "0:00:00",
+								"adjustedEnd": "0:00:16",
+								"start": "0:00:00",
+								"end": "0:00:16"
+							},
+							{
+								"confidence": 0.9894,
+								"adjustedStart": "0:00:17.067",
+								"adjustedEnd": "0:00:28.366",
+								"start": "0:00:17.067",
+								"end": "0:00:28.366"
+							}
+						]
+					},
+					{
+						"id": 3,
+						"name": "smiling",
+						"language": "en-US",
+						"instances": [
+							{
+								"confidence": 0.8386,
+								"adjustedStart": "0:00:08.533",
+								"adjustedEnd": "0:00:09.6",
+								"start": "0:00:08.533",
+								"end": "0:00:09.6"
+							},
+							{
+								"confidence": 0.8688,
+								"adjustedStart": "0:00:12.8",
+								"adjustedEnd": "0:00:13.867",
+								"start": "0:00:12.8",
+								"end": "0:00:13.867"
+							}
+						]
+					},
+					{
+						"id": 4,
+						"name": "woman",
+						"language": "en-US",
+						"instances": [
+							{
+								"confidence": 0.9271,
+								"adjustedStart": "0:00:27.733",
+								"adjustedEnd": "0:00:28.366",
+								"start": "0:00:27.733",
+								"end": "0:00:28.366"
+							}
+						]
+					}
+				],
+				"shots": [
+					{
+						"id": 0,
+						"keyFrames": [
+							{
+								"id": 0,
+								"instances": [
+									{
+										"thumbnailId": "bfc63cd5-8a5a-4829-9f87-1c125eb8470f",
+										"adjustedStart": "0:00:00.2",
+										"adjustedEnd": "0:00:00.233",
+										"start": "0:00:00.2",
+										"end": "0:00:00.233"
+									}
+								]
+							},
+							{
+								"id": 1,
+								"instances": [
+									{
+										"thumbnailId": "2f3b4003-3b9f-4edd-afa7-714659366a12",
+										"adjustedStart": "0:00:10.7",
+										"adjustedEnd": "0:00:10.733",
+										"start": "0:00:10.7",
+										"end": "0:00:10.733"
+									}
+								]
+							}
+						],
+						"instances": [
+							{
+								"adjustedStart": "0:00:00",
+								"adjustedEnd": "0:00:15.967",
+								"start": "0:00:00",
+								"end": "0:00:15.967"
+							}
+						]
+					},
+					{
+						"id": 1,
+						"keyFrames": [
+							{
+								"id": 2,
+								"instances": [
+									{
+										"thumbnailId": "449b6736-c69e-49da-ae0c-fa80d393fc22",
+										"adjustedStart": "0:00:15.967",
+										"adjustedEnd": "0:00:16",
+										"start": "0:00:15.967",
+										"end": "0:00:16"
+									}
+								]
+							},
+							{
+								"id": 3,
+								"instances": [
+									{
+										"thumbnailId": "2f4840b9-c34a-40dd-92d4-2ecf3e0b0626",
+										"adjustedStart": "0:00:16.367",
+										"adjustedEnd": "0:00:16.4",
+										"start": "0:00:16.367",
+										"end": "0:00:16.4"
+									}
+								]
+							}
+						],
+						"instances": [
+							{
+								"adjustedStart": "0:00:15.967",
+								"adjustedEnd": "0:00:24.133",
+								"start": "0:00:15.967",
+								"end": "0:00:24.133"
+							}
+						]
+					},
+					{
+						"id": 2,
+						"keyFrames": [
+							{
+								"id": 4,
+								"instances": [
+									{
+										"thumbnailId": "73502cab-ee93-4b36-b60a-ac40fe0874d3",
+										"adjustedStart": "0:00:24.133",
+										"adjustedEnd": "0:00:24.166",
+										"start": "0:00:24.133",
+										"end": "0:00:24.166"
+									}
+								]
+							},
+							{
+								"id": 5,
+								"instances": [
+									{
+										"thumbnailId": "a0ecfeb2-da40-414b-82b7-68313911f8f9",
+										"adjustedStart": "0:00:26.5",
+										"adjustedEnd": "0:00:26.533",
+										"start": "0:00:26.5",
+										"end": "0:00:26.533"
+									}
+								]
+							}
+						],
+						"instances": [
+							{
+								"adjustedStart": "0:00:24.133",
+								"adjustedEnd": "0:00:26.533",
+								"start": "0:00:24.133",
+								"end": "0:00:26.533"
+							}
+						]
+					}
+				],
+				"sentiments": [
+					{
+						"id": 0,
+						"averageScore": 0.1435,
+						"sentimentType": "Negative",
+						"instances": [
+							{
+								"adjustedStart": "0:00:17.64",
+								"adjustedEnd": "0:00:20.71",
+								"start": "0:00:17.64",
+								"end": "0:00:20.71"
+							},
+							{
+								"adjustedStart": "0:00:20.77",
+								"adjustedEnd": "0:00:24.2",
+								"start": "0:00:20.77",
+								"end": "0:00:24.2"
+							}
+						]
+					},
+					{
+						"id": 1,
+						"averageScore": 0.6904,
+						"sentimentType": "Neutral",
+						"instances": [
+							{
+								"adjustedStart": "0:00:00",
+								"adjustedEnd": "0:00:04.13",
+								"start": "0:00:00",
+								"end": "0:00:04.13"
+							},
+							{
+								"adjustedStart": "0:00:04.18",
+								"adjustedEnd": "0:00:06.45",
+								"start": "0:00:04.18",
+								"end": "0:00:06.45"
+							},
+							{
+								"adjustedStart": "0:00:09.65",
+								"adjustedEnd": "0:00:10.74",
+								"start": "0:00:09.65",
+								"end": "0:00:10.74"
+							},
+							{
+								"adjustedStart": "0:00:17.206",
+								"adjustedEnd": "0:00:17.63",
+								"start": "0:00:17.206",
+								"end": "0:00:17.63"
+							}
+						]
+					},
+					{
+						"id": 2,
+						"averageScore": 0.9287,
+						"sentimentType": "Positive",
+						"instances": [
+							{
+								"adjustedStart": "0:00:06.45",
+								"adjustedEnd": "0:00:07.19",
+								"start": "0:00:06.45",
+								"end": "0:00:07.19"
+							},
+							{
+								"adjustedStart": "0:00:07.24",
+								"adjustedEnd": "0:00:09.65",
+								"start": "0:00:07.24",
+								"end": "0:00:09.65"
+							},
+							{
+								"adjustedStart": "0:00:10.8",
+								"adjustedEnd": "0:00:14.12",
+								"start": "0:00:10.8",
+								"end": "0:00:14.12"
+							},
+							{
+								"adjustedStart": "0:00:14.18",
+								"adjustedEnd": "0:00:17.146",
+								"start": "0:00:14.18",
+								"end": "0:00:17.146"
+							},
+							{
+								"adjustedStart": "0:00:24.26",
+								"adjustedEnd": "0:00:28.29",
+								"start": "0:00:24.26",
+								"end": "0:00:28.29"
+							}
+						]
+					}
+				],
+				"blocks": [
+					{
+						"id": 0,
+						"instances": [
+							{
+								"adjustedStart": "0:00:00",
+								"adjustedEnd": "0:00:28.367",
+								"start": "0:00:00",
+								"end": "0:00:28.367"
+							}
+						]
+					}
+				],
+				"speakers": [
+					{
+						"id": 1,
+						"name": "Speaker #1",
+						"instances": [
+							{
+								"adjustedStart": "0:00:00",
+								"adjustedEnd": "0:00:04.13",
+								"start": "0:00:00",
+								"end": "0:00:04.13"
+							}
+						]
+					},
+					{
+						"id": 2,
+						"name": "Speaker #2",
+						"instances": [
+							{
+								"adjustedStart": "0:00:04.18",
+								"adjustedEnd": "0:00:07.19",
+								"start": "0:00:04.18",
+								"end": "0:00:07.19"
+							}
+						]
+					},
+					{
+						"id": 3,
+						"name": "Speaker #3",
+						"instances": [
+							{
+								"adjustedStart": "0:00:07.24",
+								"adjustedEnd": "0:00:10.74",
+								"start": "0:00:07.24",
+								"end": "0:00:10.74"
+							}
+						]
+					},
+					{
+						"id": 4,
+						"name": "Speaker #4",
+						"instances": [
+							{
+								"adjustedStart": "0:00:10.8",
+								"adjustedEnd": "0:00:14.12",
+								"start": "0:00:10.8",
+								"end": "0:00:14.12"
+							}
+						]
+					},
+					{
+						"id": 5,
+						"name": "Speaker #5",
+						"instances": [
+							{
+								"adjustedStart": "0:00:14.18",
+								"adjustedEnd": "0:00:17.63",
+								"start": "0:00:14.18",
+								"end": "0:00:17.63"
+							},
+							{
+								"adjustedStart": "0:00:20.77",
+								"adjustedEnd": "0:00:24.2",
+								"start": "0:00:20.77",
+								"end": "0:00:24.2"
+							}
+						]
+					},
+					{
+						"id": 6,
+						"name": "Speaker #6",
+						"instances": [
+							{
+								"adjustedStart": "0:00:17.64",
+								"adjustedEnd": "0:00:20.71",
+								"start": "0:00:17.64",
+								"end": "0:00:20.71"
+							}
+						]
+					},
+					{
+						"id": 7,
+						"name": "Speaker #7",
+						"instances": [
+							{
+								"adjustedStart": "0:00:24.26",
+								"adjustedEnd": "0:00:28.29",
+								"start": "0:00:24.26",
+								"end": "0:00:28.29"
+							}
+						]
+					}
+				],
+				"textualContentModeration": {
+					"id": 0,
+					"bannedWordsCount": 0,
+					"bannedWordsRatio": 0,
+					"instances": []
+				},
+				"statistics": {
+					"correspondenceCount": 4,
+					"speakerTalkToListenRatio": {
+						"1": 0.324,
+						"3": 0.032,
+						"4": 0.182,
+						"5": 0.425,
+						"7": 0.035
+					},
+					"speakerLongestMonolog": {
+						"1": 8,
+						"3": 0,
+						"4": 4,
+						"5": 11,
+						"7": 0
+					},
+					"speakerNumberOfFragments": {
+						"1": 1,
+						"3": 1,
+						"4": 1,
+						"5": 2,
+						"7": 1
+					},
+					"speakerWordCount": {
+						"1": 29,
+						"3": 2,
+						"4": 19,
+						"5": 34,
+						"7": 2
+					}
+				},
+				"sourceLanguageConfidence": 1
+			},
+			"thumbnailId": "cabb0689-fdf5-489c-86b3-f8ddf4a9f945",
+			"publishedUrl": "https://rodmandev.streaming.mediaservices.windows.net:443/e3a0eb90-0111-4b3c-bd83-c3ff6d3f418a/0addbf07-a12e-4108-a9a1-e37e330c.ism/manifest(encryption=cbc)",
+			"publishedProxyUrl": null,
+			"viewToken": "Bearer=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1cm46bWljcm9zb2Z0OmF6dXJlOm1lZGlhc2VydmljZXM6Y29udGVudGtleWlkZW50aWZpZXIiOiIxOThkMjYxMy01ODFjLTQzODktOTg2MS04ODY0OWQxNzhjYzUiLCJpc3MiOiJodHRwczovL2JyZWFrZG93bi5tZSIsImF1ZCI6IkJyZWFrZG93blVzZXIiLCJleHAiOjE1Mzg4Mzg4NTYsIm5iZiI6MTUzODc1MjM5Nn0.e4aWlv6BIsWhQWpYOtzuhPsWP8wu_KQnM9GuTDhqxOA",
+			"detectSourceLanguage": false,
+			"sourceLanguage": "en-US",
+			"language": "en-US",
+			"indexingPreset": "Default",
+			"linguisticModelId": "00000000-0000-0000-0000-000000000000",
+			"isAdult": false
+		}
+	],
+	"videosRanges": [
+		{
+			"videoId": "765ae329c7",
+			"range": {
+				"start": "0:00:00",
+				"end": "0:00:28.438"
+			}
+		}
+	]
+}
