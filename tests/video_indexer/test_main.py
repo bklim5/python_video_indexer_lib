@@ -107,6 +107,16 @@ def test_get_caption_from_video_indexer_success(mocker, mock_video_indexer):
     assert content == 'Caption content'
 
 
+def test_get_thumbnail_from_video_indexer_success(mocker, mock_video_indexer):
+    mock_video_indexer.access_token = 'some-access-token'
+    mock_response = mocker.Mock()
+    mock_response.return_value.content = 'Thumbnail content'
+    mocker.patch('requests.get', mock_response)
+    content = mock_video_indexer.get_thumbnail_from_video_indexer('video_id', 'thumbnail_id')
+
+    assert content == 'Thumbnail content'
+
+
 def test_extract_summary_from_video_indexer_info(mocker, mock_video_indexer):
     with open('tests/mock_data/video_indexer_output_processed.json') as f:
         info = json.load(f)

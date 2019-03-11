@@ -110,6 +110,24 @@ class VideoIndexer():
 
         return caption_req.content
 
+    def get_thumbnail_from_video_indexer(self, video_id, thumbnail_id):
+        print('Getting thumbnail from video: {}, thumbnail: {}'.format(video_id, thumbnail_id))
+        params = {
+            'accessToken': self.access_token
+        }
+
+        thumbnail_req = requests.get(
+            'https://api.videoindexer.ai/{loc}/Accounts/{acc_id}/Videos/{video_id}/Thumbnails/{thumbnail_id}'.format(
+                loc=self.vi_location,
+                acc_id=self.vi_account_id,
+                video_id=video_id,
+                thumbnail_id=thumbnail_id
+            ),
+            params=params
+        )
+
+        return thumbnail_req.content
+
     def extract_summary_from_video_indexer_info(self, info):
         return {
             'durationInSeconds': info['durationInSeconds'],
