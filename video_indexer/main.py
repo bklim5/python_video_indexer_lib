@@ -60,6 +60,10 @@ class VideoIndexer():
             files=files
         )
 
+        if upload_video_req.status_code != 200:
+            print('Error uploading video to video indexer: {}'.format(upload_video_req.json()))
+            raise Exception('Error uploading video to video indexer')
+
         response = upload_video_req.json()
         return response['id']
 

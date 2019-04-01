@@ -37,6 +37,7 @@ def test_check_access_token_not_exist(mocker, mock_video_indexer):
 def test_upload_to_video_indexer_success(mocker, mock_video_indexer):
     mock_video_indexer.access_token = 'some-access-token'
     mock_response = mocker.Mock()
+    mock_response.return_value.status_code = 200
     mock_response.return_value.json.return_value = {
         "accountId": "some-acc-id",
         "id": "some-video-id",
@@ -52,6 +53,22 @@ def test_upload_to_video_indexer_success(mocker, mock_video_indexer):
     video_id = mock_video_indexer.upload_to_video_indexer('in_file', 'candidate_id')
 
     assert video_id == 'some-video-id'
+
+
+def test_upload_to_video_indexer_failure(mocker, mock_video_indexer):
+    mock_video_indexer.access_token = 'some-access-token'
+    mock_response = mocker.Mock()
+    mock_response.return_value.status_code = 400
+    mock_response.return_value.json.return_value = {
+        "error": 'Some error'
+    }
+    mocker.patch('requests.post', mock_response)
+    mocker.patch('builtins.open')
+
+    with pytest.raises(Exception) as exc:
+        mock_video_indexer.upload_to_video_indexer('in_file', 'candidate_id')
+
+    assert str(exc.value) == 'Error uploading video to video indexer'
 
 
 def test_get_video_info_success(mocker, mock_video_indexer):
