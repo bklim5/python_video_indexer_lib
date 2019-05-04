@@ -1,9 +1,13 @@
 import setuptools
+from os import path
 
+
+with open('README.md', encoding='utf-8') as f:
+    long_description = f.read()
 
 setuptools.setup(
     name='video_indexer',
-    version='0.1.4',
+    version='0.1.5',
     description='Common function to query Microsoft Video Indexer',
     author='BK Lim',
     author_email='bklim5@hotmail.com',
@@ -16,5 +20,7 @@ setuptools.setup(
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
-    ]
+    ],
+    long_description=long_description,
+    long_description_content_type='text/markdown'
 )
