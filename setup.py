@@ -7,7 +7,8 @@ with open('README.md', encoding='utf-8') as f:
 
 setuptools.setup(
     name='video_indexer',
-    version='0.1.5',
+    version='0.1.6',
+    url='https://github.com/bklim5/python_video_indexer_lib',
     description='Common function to query Microsoft Video Indexer',
     author='BK Lim',
     author_email='bklim5@hotmail.com',
