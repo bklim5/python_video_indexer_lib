@@ -1,6 +1,6 @@
 import json
 import pytest
-from video_indexer.main import VideoIndexer
+from video_indexer.main import VideoIndexer, get_retry_after_from_message
 
 
 @pytest.fixture
@@ -53,6 +53,60 @@ def test_upload_to_video_indexer_success(mocker, mock_video_indexer):
     video_id = mock_video_indexer.upload_to_video_indexer('in_file', 'candidate_id')
 
     assert video_id == 'some-video-id'
+
+
+def test_upload_to_video_indexer_retry_success(mocker, mock_video_indexer):
+    mock_video_indexer.access_token = 'some-access-token'
+    mock_response = mocker.Mock()
+
+    mock_200 = mocker.Mock()
+    mock_200.status_code = 200
+    mock_200.json.return_value = {
+        "accountId": "some-acc-id",
+        "id": "some-video-id",
+        "name": "temp.mp4",
+        "userName": "dummy first name dummy last name",
+        "created": "2018-10-05T14:56:34.7268773+00:00",
+        "privacyMode": "Private",
+        "state": "Processing"
+    }
+
+    mock_429 = mocker.Mock()
+    mock_429.status_code = 429
+    mock_429.json.return_value = {
+        'statusCode': 429,
+        'message': 'Rate limit is exceeded. Try again in 17 seconds.'
+    }
+
+    mock_response.side_effect = [mock_429, mock_200]
+    mocker.patch('requests.post', mock_response)
+    mocker.patch('builtins.open')
+
+    mock_sleep = mocker.Mock()
+    mocker.patch('video_indexer.main.time.sleep', mock_sleep)
+
+    video_id = mock_video_indexer.upload_to_video_indexer('in_file', 'candidate_id')
+    assert video_id == 'some-video-id'
+    mock_sleep.assert_called_once_with(18)
+
+
+def test_upload_to_video_indexer_retry_exceeded(mocker, mock_video_indexer):
+    mock_video_indexer.access_token = 'some-access-token'
+    mock_response = mocker.Mock()
+    mock_response.return_value.status_code = 429
+    mock_response.return_value.json.return_value = {
+        'statusCode': 429,
+        'message': 'Rate limit is exceeded. Try again in 17 seconds.'
+    }
+
+    mocker.patch('video_indexer.main.time.sleep')
+    mocker.patch('requests.post', mock_response)
+    mocker.patch('builtins.open')
+
+    with pytest.raises(Exception) as exc:
+        mock_video_indexer.upload_to_video_indexer('in_file', 'candidate_id')
+
+    assert str(exc.value) == 'Retry count exceeded.'
 
 
 def test_upload_to_video_indexer_failure(mocker, mock_video_indexer):
@@ -221,3 +275,12 @@ def test_extract_summary_from_video_indexer_info(mocker, mock_video_indexer):
                 'confidencePerText': 1.1444
             }]
         }
+
+
+@pytest.mark.parametrize('message, expected', [
+    ('Rate limit is exceeded. Try again in 17 seconds.', 17),
+    ('Random Message', 30),
+    (None, 30),
+])
+def test_get_retry_after_from_message(message, expected):
+    assert get_retry_after_from_message(message) == expected

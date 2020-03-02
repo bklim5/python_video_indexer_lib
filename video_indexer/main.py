@@ -1,4 +1,14 @@
+import re
+import time
 import requests
+
+
+def get_retry_after_from_message(message):
+    match = re.search(r'Try again in (\d+) second', message or '')
+    if match:
+        return int(match.group(1))
+
+    return 30  # default to retry in 30 seconds
 
 
 class VideoIndexer():
@@ -51,16 +61,31 @@ class VideoIndexer():
             'file': open(input_filename, 'rb')
         }
 
-        upload_video_req = requests.post(
-            'https://api.videoindexer.ai/{loc}/Accounts/{acc_id}/Videos'.format(
-                loc=self.vi_location,
-                acc_id=self.vi_account_id
-            ),
-            params=params,
-            files=files
-        )
+        retry_count = 5
+        while True:
+            if retry_count < 1:
+                raise Exception('Retry count exceeded.')
 
-        if upload_video_req.status_code != 200:
+            upload_video_req = requests.post(
+                'https://api.videoindexer.ai/{loc}/Accounts/{acc_id}/Videos'.format(
+                    loc=self.vi_location,
+                    acc_id=self.vi_account_id
+                ),
+                params=params,
+                files=files
+            )
+
+            if upload_video_req.status_code == 200:
+                break
+
+            if upload_video_req.status_code == 429:  # hit throttling limit, sleep and retry
+                error_resp = upload_video_req.json()
+                print('Throttling limit hit. Error message: {}'.format(error_resp.get('message')))
+                retry_after = get_retry_after_from_message(error_resp.get('message'))
+                time.sleep(retry_after + 1)
+                retry_count -= 1
+                continue
+
             print('Error uploading video to video indexer: {}'.format(upload_video_req.json()))
             raise Exception('Error uploading video to video indexer')
 
