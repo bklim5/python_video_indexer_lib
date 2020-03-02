@@ -35,6 +35,7 @@ video_id = vi.upload_to_video_indexer(
    video_language='English'
 )
 ```
+The library will retry with delay if it's being hit by throttling limit. Maximum 5 times of retrying.
 
 ### Get information for a video
 ```
