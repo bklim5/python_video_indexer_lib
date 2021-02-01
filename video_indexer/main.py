@@ -45,13 +45,16 @@ class VideoIndexer():
         if not self.access_token:
             self.get_access_token()
 
-    def upload_to_video_indexer(self, input_filename, video_name='', video_language='English'):
+    def upload_to_video_indexer(
+        self, input_filename, video_name='',
+        video_language='English', streaming_preset='Default', indexing_preset='Default'
+    ):
         self.check_access_token()
 
         print('Uploading video to video indexer...')
         params = {
-            'streamingPreset': 'Default',
-            'indexingPreset': 'DefaultWithNoiseReduction',
+            'streamingPreset': streaming_preset,
+            'indexingPreset': indexing_preset,
             'language': video_language,
             'name': video_name,
             'accessToken': self.access_token
